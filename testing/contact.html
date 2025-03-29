@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional contract services to grow your business with AI and multi-service solutions. Get expert assistance for all your contractual needs.">
+    <meta name="keywords" content="contract services, business growth, AI solutions, professional contracts, business agreements">
+    <meta name="author" content="Your Company Name">
+    <title>Premium Contract Services | Business Growth Solutions</title>
+    
+    <!-- Preload important resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-color: #1f2937;
+            --light-text: #6b7280;
+            --background-color: #f9fafb;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            overflow-x: hidden;
+        }
+        
+        /* Header Placeholder */
+        .header-placeholder {
+            height: 80px;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Hero Slider */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .slider-container {
+                height: 400px;
+            }
+        }
+        
+        .slider {
+            display: flex;
+            width: 500%;
+            height: 100%;
+            animation: slide 25s infinite;
+        }
+        
+        .slide {
+            position: relative;
+            width: 20%;
+            height: 100%;
+        }
+        
+        .slide-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+        
+        .slide-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: var(--white);
+            width: 90%;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        
+        .slide-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .slide-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .handshake-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .slide-content h2 {
+                font-size: 1.8rem;
+            }
+            
+            .slide-content p {
+                font-size: 1rem;
+            }
+            
+            .handshake-icon {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Keyframes for slider animation */
+        @keyframes slide {
+            0% { margin-left: 0; }
+            15% { margin-left: 0; }
+            20% { margin-left: -100%; }
+            35% { margin-left: -100%; }
+            40% { margin-left: -200%; }
+            55% { margin-left: -200%; }
+            60% { margin-left: -300%; }
+            75% { margin-left: -300%; }
+            80% { margin-left: -400%; }
+            95% { margin-left: -400%; }
+            100% { margin-left: 0; }
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-card {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            width: 250px;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .contact-card p, .contact-card a {
+            color: var(--light-text);
+            text-decoration: none;
+        }
+        
+        .contact-card a:hover {
+            color: var(--primary-color);
+        }
+        
+        .response-time {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .response-time h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .commitment {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .commitment h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .commitment p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+        
+        /* Footer - Just a placeholder as per request */
+        .footer-placeholder {
+            height: 1px;
+        }
+        
+        /* Optimizations */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Reduced motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            .slider {
+                animation: none;
+            }
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 0;
+            z-index: 1000;
+            transition: var(--transition-slow);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+        }
+
+        .navbar.scrolled {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--dark);
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: translateX(5px);
+        }
+
+        .logo:hover .logo-img {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 35px;
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--primary);
+            transition: var(--transition);
+            border-radius: 3px;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            transform: translateY(20px);
+            z-index: 100;
+        }
+
+        .nav-links li:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown li {
+            margin: 0;
+            padding: 12px 25px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .dropdown li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown a {
+            display: block;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .dropdown a:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.8rem;
+            color: var(--dark);
+            transition: var(--transition);
+        }
+
+        .hamburger:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+   <!-- Navigation -->
+   <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="WhatsApp Image 2025-03-23 at 04.02.51_275a044d.jpg" alt="AR Multiservices Logo" class="logo-img" loading="lazy">
+            <span class="logo-text">AR Multiservices</span>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="Custom-webdevelopment.html">Custom Web Development</a></li>
+                    <li><a href="WordPressDevelopment.html">WordPress Development</a></li>
+                    <li><a href="Digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="E-commerce.html">E-Commerce Solutions</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+    
+    <!-- Hero Slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Business growth with AI" class="slide-img" loading="lazy">
+                <div class="slide-content">
+                    <div class="handshake-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h2>Grow Your Business with AI & Multi-Services</h2>
+                    <p>Transform your operations with our cutting-edge AI solutions and comprehensive service packages</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Time saving solutions" class="slide-img" loading="lazy">
+                <div class="slide-content">
+                    <div class="handshake-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h2>Save Time with Smart Solutions</h2>
+                    <p>Automate routine tasks and focus on what really matters for your business growth</p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Professional contract services" class="slide-img" loading="lazy">
+                <div class="slide-content">
+                    <div class="handshake-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h2>Expert Contract Services</h2>
+                    <p>Professional, legally sound contracts tailored to your specific business needs</p>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Client satisfaction guarantee" class="slide-img" loading="lazy">
+                <div class="slide-content">
+                    <div class="handshake-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h2>Client Satisfaction Guaranteed</h2>
+                    <p>Our commitment to excellence ensures you get the best service every time</p>
+                </div>
+            </div>
+            
+            <!-- Slide 5 -->
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Business analytics solutions" class="slide-img" loading="lazy">
+                <div class="slide-content">
+                    <div class="handshake-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h2>Data-Driven Decisions</h2>
+                    <p>Leverage powerful analytics to make informed business choices and maximize growth</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Get In Touch</h2>
+        
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/yournumber">+92 324 3151617</a></p>
+            </div>
+            
+            <div class="contact-card">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Phone</h3>
+                <p><a href="tel:+1234567890">+92 347 2688892 </a></p>
+            </div>
+            
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:info@yourcompany.com">ar.digitalhub9@gmail.com</a></p>
+            </div>
+            
+           
+        </div>
+        
+        <div class="response-time">
+            <h3>Quick Response Guaranteed</h3>
+            <p>We understand the importance of timely communication. You'll receive a response to your inquiry within 24 hours, often much sooner. Our team is committed to providing prompt and efficient service to all our clients.</p>
+        </div>
+    </section>
+    
+    <!-- Commitment Section -->
+    <section class="commitment">
+        <h2>Our Commitment to You</h2>
+        <p>"My mission is to not just meet, but exceed every client's expectations by delivering exceptional service tailored to their unique needs. I believe in building lasting relationships through transparency, reliability, and outstanding results."</p>
+    </section>
+    
+    <!-- Footer Placeholder -->
+    <div class="footer-placeholder"></div>
+    
+    <!-- Performance optimization script -->
+    <script>
+        // Load critical CSS first
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lazy load non-critical images
+            if ('IntersectionObserver' in window) {
+                const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+                
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove('lazy');
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+            
+            // Service worker registration for offline support
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    }, function(err) {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

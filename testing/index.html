@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AR Multiservices provides professional digital solutions including web development, WordPress, e-commerce, and digital marketing services.">
+    <meta name="keywords" content="web development, WordPress, e-commerce, digital marketing, SEO, website design">
+    <meta name="author" content="AR Multiservices">
+    <title>AR Multiservices - Professional Digital Solutions</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #013220;
+            --secondary: #32CD32;
+            --accent: #007bff;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --darker: #212529;
+            --text: #495057;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.2);
+            --transition: all 0.3s ease;
+            --transition-slow: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: url('WhatsApp Image 2025-03-23 at 03.06.39_07c3908e.jpg') no-repeat center center/cover fixed;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--dark);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInDown {
+            from { 
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from { 
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from { 
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(5deg); }
+            75% { transform: rotate(-5deg); }
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(1, 50, 32, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(50, 205, 50, 0.8); }
+            100% { box-shadow: 0 0 5px rgba(1, 50, 32, 0.5); }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes flip {
+            0% { transform: perspective(400px) rotateY(0); }
+            50% { transform: perspective(400px) rotateY(180deg); }
+            100% { transform: perspective(400px) rotateY(360deg); }
+        }
+
+        @keyframes zoomIn {
+            from { 
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to { 
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes wave {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(14deg); }
+            20% { transform: rotate(-8deg); }
+            30% { transform: rotate(14deg); }
+            40% { transform: rotate(-4deg); }
+            50% { transform: rotate(10deg); }
+            60% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .animate-slide-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInUp 0.8s ease-out forwards;
+        }
+
+        .animate-slide-down {
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: slideInDown 0.8s ease-out forwards;
+        }
+
+        .animate-slide-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        .animate-slide-right {
+            opacity: 0;
+            transform: translateX(30px);
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        .animate-bounce {
+            animation: bounce 1s infinite;
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .animate-shake {
+            animation: shake 0.5s ease-in-out;
+        }
+
+        .animate-glow {
+            animation: glow 2s infinite;
+        }
+
+        .animate-rotate {
+            animation: rotate 4s linear infinite;
+        }
+
+        .animate-flip {
+            animation: flip 3s ease-in-out infinite;
+        }
+
+        .animate-zoom-in {
+            animation: zoomIn 0.6s ease-out;
+        }
+
+        .animate-wave {
+            animation: wave 1.8s ease infinite;
+            transform-origin: 70% 70%;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 0;
+            z-index: 1000;
+            transition: var(--transition-slow);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+        }
+
+        .navbar.scrolled {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--dark);
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: translateX(5px);
+        }
+
+        .logo:hover .logo-img {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 35px;
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--primary);
+            transition: var(--transition);
+            border-radius: 3px;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            transform: translateY(20px);
+            z-index: 100;
+        }
+
+        .nav-links li:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown li {
+            margin: 0;
+            padding: 12px 25px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .dropdown li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown a {
+            display: block;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .dropdown a:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.8rem;
+            color: var(--dark);
+            transition: var(--transition);
+        }
+
+        .hamburger:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(1, 50, 32, 0.6);
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 0 30px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            margin-bottom: 30px;
+            color: var(--white);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--white);
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            opacity: 0.9;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            font-size: 1rem;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(50, 205, 50, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(50, 205, 50, 0.6);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Particles */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .particle:nth-child(1) {
+            width: 15px;
+            height: 15px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            width: 25px;
+            height: 25px;
+            top: 60%;
+            left: 15%;
+            animation-delay: 2s;
+            animation-duration: 8s;
+        }
+
+        .particle:nth-child(3) {
+            width: 10px;
+            height: 10px;
+            top: 30%;
+            left: 80%;
+            animation-delay: 4s;
+        }
+
+        .particle:nth-child(4) {
+            width: 20px;
+            height: 20px;
+            top: 70%;
+            left: 85%;
+            animation-delay: 6s;
+            animation-duration: 7s;
+        }
+
+        /* Logo Section */
+        .logo-section {
+            padding: 100px 0;
+            position: relative;
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        .logo-circle {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 5px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(0, 123, 255, 0.6);
+            overflow: hidden;
+            transition: var(--transition-slow);
+            position: relative;
+        }
+
+        .logo-circle:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 0 40px rgba(0, 123, 255, 0.8);
+        }
+
+        .logo-circle img {
+            width: 80%;
+            height: auto;
+            border-radius: 50%;
+            transition: var(--transition-slow);
+        }
+
+        .logo-circle:hover img {
+            transform: scale(1.05);
+        }
+
+        /* About Section */
+        .about-section {
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .about-image img {
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition-slow);
+        }
+
+        .about-image img:hover {
+            transform: scale(1.03) rotate(1deg);
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background: var(--secondary);
+            bottom: -15px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .highlight {
+            color: var(--secondary);
+            font-weight: 700;
+        }
+
+        /* Services Section */
+        .services-section {
+            background: var(--light);
+            position: relative;
+            padding-bottom: 150px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition-slow);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--primary);
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient);
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        
+
+        .service-card:hover .service-icon {
+            background: var(--primary);
+            color: var(--white);
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .service-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-service {
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .btn-service:hover {
+            background: var(--secondary);
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(50, 205, 50, 0.4);
+        }
+
+        .btn-contact {
+            background: var(--secondary);
+            color: var(--primary);
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .btn-contact:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(1, 50, 32, 0.4);
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background: var(--primary);
+            padding: 120px 0;
+            color: var(--white);
+            position: relative;
+        }
+
+        .testimonials-section .section-title {
+            color: var(--white);
+        }
+
+        .testimonials-section .section-title:after {
+            background: var(--secondary);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            border-color: var(--secondary);
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .testimonial-content:before,
+        .testimonial-content:after {
+            content: '"';
+            font-size: 3rem;
+            color: var(--secondary);
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .testimonial-content:before {
+            top: -20px;
+            left: -10px;
+        }
+
+        .testimonial-content:after {
+            bottom: -40px;
+            right: -10px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 3px solid var(--secondary);
+        }
+
+        .author-info h4 {
+            color: var(--white);
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--darker);
+            color: white;
+            padding: 150px 0 50px;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: var(--gradient);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .footer-col p {
+            margin-bottom: 25px;
+            opacity: 0.8;
+            font-size: 1.05rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+            transition: var(--transition);
+            display: block;
+            font-size: 1.05rem;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--secondary);
+            transform: translateX(10px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px) rotate(10deg);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            transform: translateY(20px);
+            cursor: pointer;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px) rotate(10deg);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .about-container {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 80%;
+                max-width: 350px;
+                height: calc(100vh - 90px);
+                background: var(--white);
+                transition: var(--transition-slow);
+                z-index: 999;
+                flex-direction: column;
+                padding: 40px 30px;
+                box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+                margin-left: 0;
+            }
+            
+            .dropdown {
+                position: static;
+                width: 100%;
+                box-shadow: none;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                display: none;
+                background: rgba(0,0,0,0.05);
+                margin-top: 10px;
+                border-radius: 5px;
+            }
+            
+            .nav-links li:hover .dropdown {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .logo-circle {
+                width: 220px;
+                height: 220px;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="WhatsApp Image 2025-03-23 at 04.02.51_275a044d.jpg" alt="AR Multiservices Logo" class="logo-img" loading="lazy">
+                <span class="logo-text">AR Multiservices</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="Custom-webdevelopment.html">Custom Web Development</a></li>
+                        <li><a href="WordPressDevelopment.html">WordPress Development</a></li>
+                        <li><a href="Digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="E-commerce.html">E-Commerce Solutions</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="animate-slide-up" style="animation-delay: 0.2s;">"Innovation fuels us. Your success defines us."</h1>
+            <p class="animate-slide-up" style="animation-delay: 0.4s;">Providing top-notch digital solutions tailored to your business needs</p>
+            <div class="hero-btns animate-slide-up" style="animation-delay: 0.6s;">
+                <a href="#services" class="btn btn-primary animate-glow">Our Services</a>
+                <a href="contact.html" class="btn btn-outline animate-glow">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Section -->
+    <section class="logo-section">
+        <div class="logo-circle animate-zoom-in animate-float">
+            <img src="WhatsApp Image 2025-03-23 at 04.02.51_275a044d.jpg" alt="AR Multiservices Logo" loading="lazy">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container about-container">
+            <div class="about-content animate-slide-left">
+                <h2 class="section-title">About Us</h2>
+                <p>
+                    At <span class="highlight">AR Multiservices</span>, we are committed to delivering exceptional services tailored to meet the unique needs of our clients. With over 5 years of experience in the industry, our team of experts specializes in providing top-notch solutions in web development, digital marketing, and e-commerce account management.
+                </p>
+                <p>
+                    We pride ourselves on being a trusted partner for businesses worldwide, helping them achieve their goals through innovative and customized solutions.
+                </p>
+                <p>
+                    <b>My Journey</b><br>
+                    For the past five years, I have been actively managing e-commerce accounts and custom web development projects while working under experienced mentors. During this time, I gained extensive experience at an international level, handling numerous Amazon accounts and web development projects across various industries.<br>
+
+My expertise in e-commerce lies in maximizing profitability by selecting the most high-profit products and ensuring strong profit margins. In Private Label (PL), I specialize in sourcing products from local suppliers to generate the highest possible profits.<br>
+
+Additionally, I have 2 to 3 years of experience in digital marketing, allowing me to develop and implement strategies that drive business growth.<br>
+
+Now, I am stepping into the online world independently, actively sharing my expertise on social media and offering my services publicly. My goal is to continue growing, expanding my reach, and helping businesses succeed with data-driven strategies and practical solutions.<br>
+                </p>
+                <p>
+                    <b>My Approach</b><br>
+                    At the heart of our operations lies a client-centric philosophy. We begin by meticulously understanding your unique requirements, allowing us to tailor solutions that align perfectly with your business objectives. Our strategic process ensures that we not only meet but exceed expectations, delivering results with professionalism and precision.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title animate-slide-right">Our Services</h2>
+            <p class="animate-slide-right" style="animation-delay: 0.2s;">We offer comprehensive digital solutions to help your business thrive in the online world</p>
+            
+            <div class="services-grid">
+                <!-- WordPress Service -->
+                <div class="service-card animate-slide-up" style="animation-delay: 0.2s;">
+                    
+                    <h3>WORDPRESS WEBSITE DEVELOPMENT</h3>
+                    <p>I build responsive, user-friendly websites that perform flawlessly on all devices. WordPress Development: I create custom WordPress themes, plugins, and websites that are easy to manage and highly scalable.</p>
+                    <div class="service-buttons">
+                        <a href="WordPressDevelopment.html" class="btn-service animate-glow">Viste My Page</a>
+                        <a href="contact.html" class="btn-contact animate-glow">Contact Us →</a>
+                    </div>
+                </div>
+                
+                <!-- Custom Development Service -->
+                <div class="service-card animate-slide-up" style="animation-delay: 0.4s;">
+                    
+                    <h3>CUSTOM WEBSITE DEVELOPMENT</h3>
+                    <p>I provide frontend, backend, and server services. We ensure seamless performance, fix bugs, optimize SEO, and enhance security. Whether it's development, design, or maintenance, we provide complete web solutions tailored to your needs.</p>
+                    <div class="service-buttons">
+                        <a href="Custom-webdevelopment.html" class="btn-service animate-glow">Viste My Page</a>
+                        <a href="contact.html" class="btn-contact animate-glow">Contact Us →</a>
+                    </div>
+                </div>
+                
+                <!-- E-Commerce Service -->
+                <div class="service-card animate-slide-up" style="animation-delay: 0.6s;">
+                    
+                    <h3>E-COMMERCE SOLUTIONS</h3>
+                    <p>E-commerce Account Management: Specializing in platforms like Amazon, I offer comprehensive account handling services, including PL, FBA, and FBM. Our expertise has been instrumental in managing accounts across regions such as the UK, UAE, USA, and Australia.</p>
+                    <div class="service-buttons">
+                        <a href="E-commerce.html" class="btn-service animate-glow">Viste My Page</a>
+                        <a href="contact.html" class="btn-contact animate-glow">Contact Us→</a>
+                    </div>
+                </div>
+                
+                <!-- Digital Marketing Service -->
+                <div class="service-card animate-slide-up" style="animation-delay: 0.8s;">
+                    
+                    <h3>DIGITAL MARKETING</h3>
+                    <p>I offer SEO, social media marketing, and PPC campaigns to help businesses reach their target audience. Let me help you grow your online presence and attract more customers to your business.</p>
+                    <div class="service-buttons">
+                        <a href="Digital-marketing.html" class="btn-service animate-glow">Viste My Page</a>
+                        <a href="contact.html" class="btn-contact animate-glow">Contact Us →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title animate-slide-left">What Our Clients Say</h2>
+            <p class="animate-slide-left" style="animation-delay: 0.2s;">Hear from businesses that have transformed their digital presence with our services</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="testimonial-content">
+                        AR Multiservices completely transformed our online presence. Their WordPress development team created a website that perfectly represents our brand and has significantly increased our customer engagement.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="author-avatar" loading="lazy">
+                        <div class="author-info">
+                            <h4>Michael Johnson</h4>
+                            <p>CEO, TechSolutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-slide-up" style="animation-delay: 0.5s;">
+                    <div class="testimonial-content">
+                        The e-commerce solutions provided by AR Multiservices helped us expand our Amazon business internationally. Their account management services are exceptional and have boosted our sales by over 150%.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="author-avatar" loading="lazy">
+                        <div class="author-info">
+                            <h4>Sarah Williams</h4>
+                            <p>Founder, Global Trends</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card animate-slide-up" style="animation-delay: 0.7s;">
+                    <div class="testimonial-content">
+                        Their custom web development services are top-notch. They understood our complex requirements and delivered a solution that has streamlined our operations and improved efficiency across all departments.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" class="author-avatar" loading="lazy">
+                        <div class="author-info">
+                            <h4>David Chen</h4>
+                            <p>CTO, Enterprise Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <img src="WhatsApp Image 2025-03-23 at 04.02.51_275a044d.jpg" alt="AR Multiservices Logo" class="logo-img" loading="lazy">
+                        <span class="logo-text">AR Multiservices</span>
+                    </a>
+                    <p>We help businesses establish a powerful online presence through innovative digital solutions and marketing strategies.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Custom-webdevelopment.html">Web Development</a></li>
+                        <li><a href="WordPressDevelopment.html">WordPress</a></li>
+                        <li><a href="Digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="E-commerce.html">E-Commerce</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">E-commerce</a></li>
+                        <li><a href="#">Digital-marketing</a></li>
+                        <li><a href="#">Custom-webdevelopment</a></li>
+                        <li><a href="#">WordPressDevelopment</a></li>
+                       
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Shind Jamshoro, Pakistan</p>
+                    <p><i class="fas fa-phone"></i> +92 3243151617</p>
+                    <p><i class="fas fa-envelope"></i> ar.digitalhub9@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AR Multiservices. All Rights Reserved. | Designed with ❤ by AR Multiservices</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                    '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+            
+            // Header Scroll Effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if(window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+                
+                // Back to Top Button
+                const backToTop = document.querySelector('.back-to-top');
+                if(window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+            
+            // Smooth Scrolling for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if(navLinks.classList.contains('active')) {
+                            navLinks.classList.remove('active');
+                            hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                });
+            });
+            
+            // Animation on Scroll
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.animate-slide-up, .animate-slide-down, .animate-slide-left, .animate-slide-right');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if(elementPosition < screenPosition) {
+                        const delay = element.getAttribute('style') ? 
+                            parseFloat(element.getAttribute('style').split('delay: ')[1]) || 0 : 0;
+                        
+                        setTimeout(() => {
+                            element.style.opacity = '1';
+                            element.style.transform = 'translate(0)';
+                        }, delay * 1000);
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            window.addEventListener('load', animateOnScroll);
+            
+            // Floating particles animation
+            const particles = document.querySelectorAll('.particle');
+            particles.forEach(particle => {
+                const duration = 5 + Math.random() * 5;
+                const delay = Math.random() * 5;
+                particle.style.animationDuration = `${duration}s`;
+                particle.style.animationDelay = `${delay}s`;
+            });
+        });
+    </script>
+</body>
+</html>

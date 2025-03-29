@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium WordPress Developer | 5+ Years Expertise | Custom Solutions</title>
+    <meta name="description" content="Professional WordPress development services including custom themes, plugins, WooCommerce solutions, and optimization. 5+ years experience building high-performance WordPress sites.">
+    <meta property="og:title" content="Premium WordPress Developer | 5+ Years Expertise | Custom Solutions">
+    <meta property="og:description" content="Expert WordPress solutions tailored to your business needs. From custom themes to plugin development, we build high-performance WordPress websites.">
+    <meta property="og:image" content="https://yourdomain.com/images/wordpress-development.jpg">
+    <link rel="canonical" href="https://yourdomain.com/WordPressDevelopment.html" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" as="font" crossorigin>
+    
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap">
+    
+    <!-- Schema markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "AR Multiservices",
+      "image": "https://yourdomain.com/images/logo.jpg",
+      "telephone": "+92 3243151617",
+      "email": "ar.digitalhub9@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shind Jamshoro",
+        "addressCountry": "Pakistan"
+      },
+      "serviceType": "WordPress Development",
+      "description": "Professional WordPress development services including custom themes, plugins, WooCommerce solutions, and optimization."
+    }
+    </script>
+    
+    <style>
+        /* 📁 CSS (Professional Grade) - Optimized */
+        :root {
+            --primary: #6C63FF;
+            --secondary: #FF6584;
+            --dark: #2F2E41;
+            --light: #F8F9FA;
+            --success: #28A745;
+            --warning: #FFC107;
+            --darker: #1e293b;
+            --transition: all 0.3s ease;
+            --transition-slow: all 0.5s ease;
+            --shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+            --shadow-primary: 0 10px 30px rgba(108, 99, 255, 0.3);
+            --gradient: linear-gradient(135deg, #6C63FF 0%, #3A2FAC 100%);
+        }
+        
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            background: var(--light);
+            overflow-x: hidden;
+            line-height: 1.6;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Section Headings */
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 2.5rem;
+            color: var(--dark);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .section-title.white {
+            color: white;
+        }
+        
+        .section-title.white::after {
+            background: white;
+        }
+        
+        /* Grid System */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 25px 0;
+            z-index: 1000;
+            transition: var(--transition-slow);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+        }
+        
+        .navbar.scrolled {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+        
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--dark);
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: translateX(5px);
+        }
+        
+        .logo:hover .logo-img {
+            transform: rotate(15deg) scale(1.1);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 35px;
+            position: relative;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+            font-size: 1.05rem;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--primary);
+            transition: var(--transition);
+            border-radius: 3px;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            transform: translateY(20px);
+            z-index: 100;
+        }
+        
+        .nav-links li:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown li {
+            margin: 0;
+            padding: 12px 25px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .dropdown li:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown a {
+            display: block;
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        .dropdown a:hover {
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.8rem;
+            color: var(--dark);
+            transition: var(--transition);
+        }
+        
+        .hamburger:hover {
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #6C63FF 0%, #3A2FAC 100%);
+            color: white;
+            padding: 200px 0 150px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            animation: fadeIn 2s;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .stat-box {
+            background: rgba(108, 99, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 15px;
+            transition: all 0.4s;
+        }
+        
+        .stat-box:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 120px 0;
+            background: #f8f9fa;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            padding: 40px;
+            margin-bottom: 30px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        /* Process Section */
+        .process {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .process-step {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 30px;
+            flex-shrink: 0;
+            box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+        }
+        
+        .step-content {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            flex-grow: 1;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .step-content h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 30px;
+            margin-left: -2px;
+            z-index: 0;
+        }
+        
+        /* Technology Section */
+        .tech {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 30px;
+        }
+        
+        .tech-item {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .tech-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tech-icon img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .tech-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Portfolio Section */
+        .portfolio {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .portfolio-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .portfolio-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(108, 99, 255, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-item:hover .portfolio-img {
+            transform: scale(1.1);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, #4A3FCF 100%);
+            color: white;
+        }
+        
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px;
+            transition: all 0.4s;
+        }
+        
+        .testimonial-card:hover {
+            transform: rotate(1deg) scale(1.02);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .stars {
+            color: #FFD700;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .stars .empty {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: #f8f9fa;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 20px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        
+        .handshake-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 40px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .handshake-logo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 150px 0;
+            text-align: center;
+            background: var(--dark);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--darker);
+            color: rgb(223, 221, 221);
+            padding: 120px 0 30px;
+            position: relative;
+        }
+        
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: var(--gradient);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            position: relative;
+            color: #ddd;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 50px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+          
+        }
+        
+        .footer-col p {
+            margin-bottom: 25px;
+            opacity: 0.8;
+            font-size: 1.05rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+            transition: var(--transition);
+            display: block;
+            font-size: 1.05rem;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--secondary);
+            transform: translateX(10px);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: rgb(250, 250, 250);
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px) rotate(10deg);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow-primary);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            transform: translateY(20px);
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px) rotate(10deg);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideInLeft { from { opacity: 0; transform: translateX(-50px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes slideInRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        @keyframes gradientShift { 0% { transform: rotate(0deg); } 100% { transform: rotate(5deg); } }
+        @keyframes wave { 0% { background-position-x: 0; } 100% { background-position-x: 1200px; } }
+        @keyframes expandHeight { from { height: 0; } to { height: 100%; } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        @keyframes glow { 0% { box-shadow: 0 0 10px rgba(108, 99, 255, 0.5); } 100% { box-shadow: 0 0 30px rgba(108, 99, 255, 0.8); } }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); } 20%, 40%, 60%, 80% { transform: translateX(10px); } }
+        @keyframes flip { from { transform: perspective(400px) rotateY(0); } to { transform: perspective(400px) rotateY(180deg); } }
+        @keyframes zoomIn { from { transform: scale(0.5); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        @keyframes slideUp { from { transform: translateY(100px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes slideDown { from { transform: translateY(-100px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-100px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes fadeInRight { from { opacity: 0; transform: translateX(100px); } to { opacity: 1; transform: translateX(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(100px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInDownBig { from { opacity: 0; transform: translateY(-200px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes flipInX { from { transform: perspective(400px) rotateX(90deg); opacity: 0; } to { transform: perspective(400px) rotateX(0); opacity: 1; } }
+        @keyframes flipInY { from { transform: perspective(400px) rotateY(90deg); opacity: 0; } to { transform: perspective(400px) rotateY(0); opacity: 1; } }
+        @keyframes lightSpeedIn { from { transform: translateX(100%) skewX(-30deg); opacity: 0; } to { transform: translateX(0) skewX(0); opacity: 1; } }
+        @keyframes rollIn { from { opacity: 0; transform: translateX(-100%) rotate(-120deg); } to { opacity: 1; transform: translateX(0) rotate(0); } }
+        @keyframes rubberBand { 0% { transform: scale(1); } 30% { transform: scaleX(1.25) scaleY(0.75); } 40% { transform: scaleX(0.75) scaleY(1.25); } 60% { transform: scaleX(1.15) scaleY(0.85); } 100% { transform: scale(1); } }
+        @keyframes swing { 20% { transform: rotate(15deg); } 40% { transform: rotate(-10deg); } 60% { transform: rotate(5deg); } 80% { transform: rotate(-5deg); } 100% { transform: rotate(0deg); } }
+        @keyframes tada { 0% { transform: scale(1); } 10%, 20% { transform: scale(0.9) rotate(-3deg); } 30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg); } 40%, 60%, 80% { transform: scale(1.1) rotate(-3deg); } 100% { transform: scale(1) rotate(0); } }
+        @keyframes wobble { 0% { transform: translateX(0%); } 15% { transform: translateX(-25%) rotate(-5deg); } 30% { transform: translateX(20%) rotate(3deg); } 45% { transform: translateX(-15%) rotate(-3deg); } 60% { transform: translateX(10%) rotate(2deg); } 75% { transform: translateX(-5%) rotate(-1deg); } 100% { transform: translateX(0%); } }
+        @keyframes jello { 0%, 100% { transform: scale3d(1, 1, 1); } 15% { transform: scale3d(1.25, 0.75, 1); } 20% { transform: scale3d(0.75, 1.25, 1); } 25% { transform: scale3d(1.15, 0.85, 1); } 32% { transform: scale3d(0.95, 1.05, 1); } 45% { transform: scale3d(1.05, 0.95, 1); } }
+        @keyframes heartBeat { 0% { transform: scale(1); } 14% { transform: scale(1.3); } 28% { transform: scale(1); } 42% { transform: scale(1.3); } 70% { transform: scale(1); } }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tech-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .service-card, .portfolio-item, .testimonial-card {
+                width: 100%;
+                margin: 15px 0;
+            }
+            
+            .process-steps::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .process-step {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .step-content {
+                border-left: none;
+                border-top: 4px solid var(--primary);
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 0.9rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .portfolio-grid, .tech-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="WhatsApp Image 2025-03-23 at 04.02.51_275a044d.jpg" alt="AR Multiservices Logo" class="logo-img">
+                    <span class="logo-text">AR Multiservices</span>
+                </a>
+           
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="Custom-webdevelopment.html">Custom Web Development</a></li>
+                        <li><a href="WordPressDevelopment.html">WordPress Development</a></li>
+                        <li><a href="Digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="E-commerce.html">E-Commerce Solutions</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 0.2s;">WordPress Development Services</h1>
+            <p class="animate__animated animate__fadeIn" style="animation-delay: 0.5s;">Expert WordPress solutions tailored to your business needs. From custom themes to plugin development, we build high-performance WordPress websites that drive results.</p>
+            <a href="#contact" class="btn animate__animated animate__pulse animate__infinite" style="animation-delay: 1s;">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">Why Choose My WordPress Services</h2>
+            <div class="grid">
+                <div class="stat-box animate__animated animate__bounceIn" style="animation-delay: 0.2s;">
+                    <h3 class="counter" data-target="150">20</h3>
+                    <p>WordPress Projects Completed</p>
+                </div>
+                <div class="stat-box animate__animated animate__bounceIn" style="animation-delay: 0.4s;">
+                    <h3 class="counter" data-target="99">18</h3>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+                <div class="stat-box animate__animated animate__bounceIn" style="animation-delay: 0.6s;">
+                    <h3 class="counter" data-target="1.2">1.5</h3>
+                    <p>Average Load Time (seconds)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">My WordPress Development Services</h2>
+            <div class="grid">
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <h3>Custom WordPress Theme Development</h3>
+                    <p>I create bespoke WordPress themes tailored to your brand identity and business requirements, ensuring pixel-perfect designs and optimal performance.</p>
+                    <ul>
+                        <li>Fully responsive designs</li>
+                        <li>SEO-optimized code structure</li>
+                        <li>Custom page templates</li>
+                    </ul>
+                </div>
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <h3>WordPress Plugin Development</h3>
+                    <p>Need custom functionality? I develop secure, efficient WordPress plugins that extend your website's capabilities without compromising performance.</p>
+                    <ul>
+                        <li>Custom plugin development</li>
+                        <li>Existing plugin customization</li>
+                        <li>API integrations</li>
+                    </ul>
+                </div>
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <h3>WooCommerce Development</h3>
+                    <p>Complete eCommerce solutions built on WordPress. I create high-converting online stores with seamless user experiences.</p>
+                    <ul>
+                        <li>Custom product pages</li>
+                        <li>Payment gateway integration</li>
+                        <li>Inventory management</li>
+                    </ul>
+                </div>
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+                    <h3>WordPress Speed Optimization</h3>
+                    <p>Slow WordPress site? We'll optimize it for lightning-fast load times, improving user experience and search rankings.</p>
+                    <ul>
+                        <li>Database optimization</li>
+                        <li>Image compression</li>
+                        <li>Caching implementation</li>
+                    </ul>
+                </div>
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+                    <h3>WordPress Security Hardening</h3>
+                    <p>Protect your WordPress site from hackers and malware with our comprehensive security solutions.</p>
+                    <ul>
+                        <li>Malware removal</li>
+                        <li>Firewall implementation</li>
+                        <li>Security audits</li>
+                    </ul>
+                </div>
+                <div class="service-card animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
+                    <h3>WordPress Maintenance</h3>
+                    <p>Regular maintenance keeps your WordPress site secure, updated, and performing at its best.</p>
+                    <ul>
+                        <li>Core updates</li>
+                        <li>Plugin updates</li>
+                        <li>Regular backups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section - Enhanced -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">My WordPress Development Process</h2>
+            <div class="process-steps">
+                <div class="process-step animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
+                    <div class="step-number animate__animated animate__bounceIn" style="animation-delay: 0.3s;">1</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>I start by understanding your business goals, target audience, and technical requirements to create a comprehensive project plan. This phase includes competitor analysis, content strategy, and technical specifications.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated animate__fadeInRight" style="animation-delay: 0.4s;">
+                    <div class="step-number animate__animated animate__bounceIn" style="animation-delay: 0.5s;">2</div>
+                    <div class="step-content">
+                        <h3>Design & Prototyping</h3>
+                        <p>I create wireframes and mockups to visualize your WordPress site before development begins. I focus on user experience, conversion optimization, and brand consistency.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated animate__fadeInLeft" style="animation-delay: 0.6s;">
+                    <div class="step-number animate__animated animate__bounceIn" style="animation-delay: 0.7s;">3</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>I am  build your site using clean, efficient code following best practices and coding standards. I implement custom functionality, responsive design, and performance optimizations.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated animate__fadeInRight" style="animation-delay: 0.8s;">
+                    <div class="step-number animate__animated animate__bounceIn" style="animation-delay: 0.9s;">4</div>
+                    <div class="step-content">
+                        <h3>Testing & Quality Assurance</h3>
+                        <p>I rigorously test your WordPress site across devices and browsers to ensure flawless performance. This includes functionality testing, speed testing, security scanning, and user acceptance testing.</p>
+                    </div>
+                </div>
+                <div class="process-step animate__animated animate__fadeInLeft" style="animation-delay: 1s;">
+                    <div class="step-number animate__animated animate__bounceIn" style="animation-delay: 1.1s;">5</div>
+                    <div class="step-content">
+                        <h3>Launch & Optimization</h3>
+                        <p>I deploy your WordPress site and optimize it for maximum performance and search visibility. Post-launch, I provide training, documentation, and ongoing support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section - Redesigned -->
+    <section class="tech">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">Technologies We Work With</h2>
+            <div class="tech-grid">
+                <div class="tech-item animate-float" style="animation-delay: 0.1s;">
+                    <div class="tech-icon">
+                        <i class="fab fa-wordpress" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>WordPress Core</p>
+                </div>
+                <div class="tech-item animate-rotate" style="animation-delay: 0.2s;">
+                    <div class="tech-icon">
+                        <i class="fas fa-cart-plus" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>WooCommerce</p>
+                </div>
+                <div class="tech-item animate-shake" style="animation-delay: 0.3s;">
+                    <div class="tech-icon">
+                        <i class="fab fa-elementor" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>Elementor Pro</p>
+                </div>
+                <div class="tech-item animate-flip" style="animation-delay: 0.4s;">
+                    <div class="tech-icon">
+                        <i class="fas fa-paint-brush" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>Divi Builder</p>
+                </div>
+                <div class="tech-item animate-zoom" style="animation-delay: 0.5s;">
+                    <div class="tech-icon">
+                        <i class="fab fa-php" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>PHP 8+</p>
+                </div>
+                <div class="tech-item animate-slide-up" style="animation-delay: 0.6s;">
+                    <div class="tech-icon">
+                        <i class="fas fa-database" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>MySQL</p>
+                </div>
+                <div class="tech-item animate-slide-down" style="animation-delay: 0.7s;">
+                    <div class="tech-icon">
+                        <i class="fab fa-js" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item animate-fade-left" style="animation-delay: 0.8s;">
+                    <div class="tech-icon">
+                        <i class="fab fa-react" style="font-size: 40px; color: var(--primary);"></i>
+                    </div>
+                    <p>React</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">My WordPress Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+                    <img src="WhatsApp Image 2025-03-26 at 19.52.06_9818b5fc.jpg" alt="WordPress E-commerce Site" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Store</h3>
+                        <p>Custom WooCommerce solution with advanced product filtering</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated animate__zoomIn" style="animation-delay: 0.4s;">
+                    <img src="WhatsApp Image 2025-03-26 at 19.52.06_950ccc88.jpg" alt="Corporate WordPress Site" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Website</h3>
+                        <p>Custom theme with multilingual support</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated animate__zoomIn" style="animation-delay: 0.6s;">
+                    <img src="WhatsApp Image 2025-03-26 at 19.52.06_1217eda5.jpg" alt="WordPress Membership Site" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Membership Portal</h3>
+                        <p>Custom membership system with payment integration</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated animate__zoomIn" style="animation-delay: 0.8s;">
+                    <img src="WhatsApp Image 2025-03-26 at 19.52.06_519c7d76.jpg" alt="WordPress Blog" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>News Portal</h3>
+                        <p>High-performance news site with custom ad management</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated animate__zoomIn" style="animation-delay: 1s;">
+                    <img src="WhatsApp Image 2025-03-26 at 19.52.06_18053506.jpg" alt="WordPress LMS" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Learning Management System</h3>
+                        <p>Custom LMS with course progression tracking</p>
+                    </div>
+                </div>
+                <div class="portfolio-item animate__animated animate__zoomIn" style="animation-delay: 1.2s;">
+                    <img src="WhatsApp Image 2025-03-26 at 19.52.06_536717ef.jpg" alt="WordPress Directory" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Business Directory</h3>
+                        <p>Custom directory with advanced search filters</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Testimonials Section with Stars -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title white animate__animated animate__fadeIn">What My Clients Say</h2>
+            <div class="grid">
+                <div class="testimonial-card animate__animated animate__flipInX" style="animation-delay: 0.2s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Our WordPress site's performance improved dramatically after AR Multiservices optimized it. Page load times decreased by 70% and conversions increased by 40%."</p>
+                    <strong>- Sarah Johnson, </strong>
+                </div>
+                <div class="testimonial-card animate__animated animate__flipInX" style="animation-delay: 0.4s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The custom WordPress theme they developed perfectly captured our brand identity. The attention to detail and responsive design exceeded our expectations."</p>
+                    <strong>- Michael Chen, Marketing Director</strong>
+                </div>
+                <div class="testimonial-card animate__animated animate__flipInX" style="animation-delay: 0.6s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"From initial consultation to final delivery, AR Multiservices provided exceptional WordPress development services. Their plugin customization solved our unique business needs."</p>
+                    <strong>- Emily Rodriguez, E-commerce Manager</strong>
+                </div>
+                <div class="testimonial-card animate__animated animate__flipInX" style="animation-delay: 0.8s;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"Good work overall, though there were some delays in delivery. The final product met our requirements and the team was responsive to feedback."</p>
+                    <strong>- David Wilson, Small Business Owner</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section - Collapsible -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">WordPress Development FAQs</h2>
+            <div class="faq-list">
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="faq-question">
+                        <h3>How long does it take to develop a custom WordPress website?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The timeline varies based on complexity. A basic WordPress site takes 2-4 weeks, while complex eCommerce solutions may require 8-12 weeks. We provide detailed timelines after understanding your specific requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="faq-question">
+                        <h3>What's the difference between a WordPress theme and template?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A theme controls the overall design of your WordPress site, while templates are page layouts within a theme. I create custom themes with multiple templates tailored to different content types.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <div class="faq-question">
+                        <h3>Can you migrate my existing website to WordPress?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! I specialize in seamless migrations from various platforms to WordPress, ensuring no data loss and maintaining SEO rankings. I handle everything from content transfer to URL redirects.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+                    <div class="faq-question">
+                        <h3>How do you ensure my WordPress site is secure?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I implement multiple security layers including SSL certificates, firewalls, regular updates, and security plugins. My development process follows WordPress security best practices to minimize vulnerabilities.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+                    <div class="faq-question">
+                        <h3>Do you provide WordPress training?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer comprehensive training sessions to help you manage your WordPress site. Training covers content updates, plugin management, basic troubleshooting, and best practices.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 1.2s;">
+                    <div class="faq-question">
+                        <h3>What's included in your WordPress maintenance plans?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>My maintenance includes core/plugin updates, security monitoring, daily backups, performance optimization, uptime monitoring, and technical support. Plans are customizable based on your needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 1.4s;">
+                    <div class="faq-question">
+                        <h3>Can you integrate third-party services with WordPress?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, i regularly integrate payment gateways, CRMs, marketing tools, and other services with WordPress. I use APIs and custom development to ensure seamless integration with your existing systems.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate__animated animate__fadeInUp" style="animation-delay: 1.6s;">
+                    <div class="faq-question">
+                        <h3>How do you optimize WordPress for search engines?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>My SEO approach includes technical optimization (speed, mobile-friendliness), content strategy, schema markup, proper URL structures, and integration with tools like Yoast SEO. We follow Google's best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - From Your Code -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title animate__animated animate__fadeIn">Contact Us</h2>
+            <div class="handshake-logo animate__animated animate__pulse">
+                <i class="fas fa-handshake"></i>
+            </div>
+            <div class="contact-form animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
+                <form id="wp-contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 class="animate__animated animate__fadeIn">Ready to Build Your WordPress Site?</h2>
+            <p class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">Let's discuss your project.</p>
+            <a href="#contact" class="btn animate__animated animate__pulse animate__infinite" style="animation-delay: 0.4s;">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        
+                        <img src="WhatsApp Image 2025-03-23 at 04.02.51_275a044d.jpg" alt="AR Multiservices Logo" class="logo-img">
+                        <span class="logo-text">AR Multiservices</span>
+                    </a>
+                    <p>We help businesses establish a powerful online presence through innovative digital solutions and marketing strategies.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Custom-webdevelopment.html">Custom-Web Development</a></li>
+                        <li><a href="WordPressDevelopment.html">WordPress</a></li>
+                        <li><a href="Digital-marketing.html">Digital Marketing</a></li>
+                        <li><a href="E-commerce.html">E-Commerce</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Custom WordPress Theme Development</a></li>
+                        <li><a href="#">WordPress Plugin Development</a></li>
+                        <li><a href="#">WooCommerce Development</a></li>
+                        <li><a href="#">WordPress Speed Optimization</a></li>
+                        <li><a href="#">WordPress Security Hardening</a></li>
+                        <li><a href="#">WordPress Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Shind Jamshoro, Pakistan</p>
+                    <p><i class="fas fa-phone"></i> +92 3243151617</p>
+                    <p><i class="fas fa-envelope"></i> ar.digitalhub9@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8AM - 6PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AR Multiservices. All Rights Reserved. | Designed with ❤ by AR Multiservices</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile Navigation Toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+            const increment = target / speed;
+            
+            function updateCount() {
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            }
+            updateCount();
+        });
+
+        // FAQ Toggle
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const header = item.querySelector('.faq-question');
+            header.addEventListener('click', () => {
+                item.classList.toggle('active');
+                
+                // Close other open items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('wp-contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            if(!name || !email || !message) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Here you would typically send the data to your server
+            console.log('Form submitted:', { name, email, phone, message });
+            
+            // Show success message
+            const button = this.querySelector('button');
+            button.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            button.style.backgroundColor = 'var(--success)';
+            
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                this.reset();
+                button.innerHTML = 'Send Message';
+                button.style.backgroundColor = 'var(--primary)';
+            }, 2000);
+        });
+
+        // GSAP Scroll Animations
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Animate service cards on scroll
+        gsap.utils.toArray('.service-card').forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%"
+                },
+                y: 50,
+                opacity: 0,
+                stagger: 0.2,
+                duration: 1
+            });
+        });
+        
+        // Animate portfolio items on scroll
+        gsap.utils.toArray('.portfolio-item').forEach((item, i) => {
+            gsap.from(item, {
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%"
+                },
+                scale: 0.5,
+                opacity: 0,
+                duration: 0.8,
+                delay: i * 0.1
+            });
+        });
+        
+        // Floating animation for tech items
+        gsap.to(".tech-item", {
+            y: -20,
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            stagger: 0.1
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('active');
+            } else {
+                backToTopButton.classList.remove('active');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('scrolled');
+            }
+        });
+
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            // Native lazy loading is supported
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        } else {
+            // Fallback for browsers that don't support native lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+
+        // Performance optimization message
+        console.log('Your browsing experience is fully optimized! Our website refreshes dynamically in just 1.2 seconds to ensure seamless updates whenever you visit. Experience lightning-fast performance and real-time responsiveness, powered by GitHub!');
+        console.log('Enjoy a perfectly optimized experience on any device! Whether on PC, laptop, mobile, or tablet, our website retains its original professional design while ensuring full functionality and clarity on all screen sizes. No compromises—just seamless performance!');
+    </script>
+</body>
+</html>
